@@ -10,6 +10,7 @@ public class PlayerMove1 : MonoBehaviour
     TextMesh OptionA;
     TextMesh OptionB;
     TextMesh OptionC;
+    GameObject NPCText;
 
     void Awake()
     {
@@ -38,12 +39,28 @@ public class PlayerMove1 : MonoBehaviour
         charControl.SimpleMove(moveDirForward);
 
     }
-
-    private void OnTriggerEnter(Collider other)
+/*
+    public void OnTriggerEnter(Collider other)
     {
         Debug.Log("Entered Trigger");
         if (other.tag == "NPC")
         {
+            other.gameObject.GetComponent<OptionController>().branch = 0;
+            OptionA.text = other.gameObject.GetComponent<OptionController>().OptionA;
+            OptionB.text = other.gameObject.GetComponent<OptionController>().OptionB;
+            OptionC.text = other.gameObject.GetComponent<OptionController>().OptionC;
+            
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "NPC")
+        {
+            OptionController OC = other.gameObject.GetComponent<OptionController>();
+            if (Input.GetKeyDown("z")) { OC.choiceA(); }
+            if (Input.GetKeyDown("x")) { OC.choiceB(); Debug.Log("Option B picked"); }
+            if (Input.GetKeyDown("c")) { OC.choiceC(); }
             OptionA.text = other.gameObject.GetComponent<OptionController>().OptionA;
             OptionB.text = other.gameObject.GetComponent<OptionController>().OptionB;
             OptionC.text = other.gameObject.GetComponent<OptionController>().OptionC;
@@ -58,6 +75,7 @@ public class PlayerMove1 : MonoBehaviour
             OptionA.text = "";
             OptionB.text = "";
             OptionC.text = "";
+            other.gameObject.GetComponent<OptionController>().branch = 0;
         }
-    }
+    }*/
 }
