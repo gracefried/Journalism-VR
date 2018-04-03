@@ -24,7 +24,7 @@ public class PlayerLook : MonoBehaviour
         OptionC = tablet.transform.Find("OptionC");
     }
 
-    void Update()
+    void FixedUpdate()
     {
         RotateCamera();
         //raycaster();
@@ -35,11 +35,11 @@ public class PlayerLook : MonoBehaviour
     {
         Vector3 rayOrigin = mainCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
-        if (Physics.Raycast(rayOrigin, mainCam.transform.forward, out hit, 100f))
+        if (Physics.Raycast(rayOrigin, mainCam.transform.forward, out hit))
         {
             Debug.Log("Something hit: " + hit.collider.tag);
 
-            if (hit.collider.tag == "OptionA") {
+            /*if (hit.collider.tag == "OptionA") {
                 OptionA.position = new Vector3(0.0f, OptionA.position.y, -2.0f);
                 OptionA.localScale = new Vector3(1.5f, 1.5f, 1.0f);
                 OptionA.gameObject.GetComponent<TextMesh>().color = new Vector4(0, 0, 0, 1);
@@ -73,7 +73,7 @@ public class PlayerLook : MonoBehaviour
                 OptionC.localScale = new Vector3(1.0f, 1.0f, 1.0f);
                 OptionC.gameObject.GetComponent<TextMesh>().color = new Vector4(1, 1, 1, 1);
 
-            }
+            }*/
         }
     }
 

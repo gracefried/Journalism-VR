@@ -11,6 +11,7 @@ public class PlayerMove1 : MonoBehaviour
     TextMesh OptionB;
     TextMesh OptionC;
     GameObject NPCText;
+    Camera mainCam;
 
     void Awake()
     {
@@ -20,11 +21,18 @@ public class PlayerMove1 : MonoBehaviour
         OptionB = tablet.transform.Find("OptionB").GetComponent<TextMesh>();
         OptionC = tablet.transform.Find("OptionC").GetComponent<TextMesh>();
         OptionA.text = ""; OptionB.text = ""; OptionC.text = "";
+        mainCam = transform.Find("Main Camera").GetComponent<Camera>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         MovePlayer();
+        Vector3 rayOrigin = mainCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
+        RaycastHit hit;
+        if (Physics.Raycast(rayOrigin, mainCam.transform.forward, out hit, 100f))
+        {
+            Debug.Log("Something hit: " + hit.collider.tag);
+        }
     }
 
     void MovePlayer()
