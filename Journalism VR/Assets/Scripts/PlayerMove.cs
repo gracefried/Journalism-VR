@@ -16,7 +16,7 @@ public class PlayerMove1 : MonoBehaviour
     void Awake()
     {
         charControl = GetComponent<CharacterController>();
-        tablet = transform.Find("TestTablet").gameObject;
+        tablet = transform.Find("Tablet").gameObject;
         OptionA = tablet.transform.Find("OptionA").GetComponent<TextMesh>();
         OptionB = tablet.transform.Find("OptionB").GetComponent<TextMesh>();
         OptionC = tablet.transform.Find("OptionC").GetComponent<TextMesh>();

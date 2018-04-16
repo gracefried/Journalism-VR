@@ -140,7 +140,7 @@ public class OptionController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            GameObject tablet = other.transform.Find("TestTablet").gameObject;
+            GameObject tablet = other.transform.Find("Tablet").gameObject;
             tablet.transform.Find("OptionA").GetComponent<TextMesh>().text = OptionA;
             tablet.transform.Find("OptionB").GetComponent<TextMesh>().text = OptionB;
             tablet.transform.Find("OptionC").GetComponent<TextMesh>().text = OptionC;

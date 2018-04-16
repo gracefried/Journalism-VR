@@ -18,7 +18,7 @@ public class PlayerLook : MonoBehaviour
     void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        tablet = transform.parent.Find("TestTablet").gameObject;
+        tablet = transform.parent.Find("Tablet").gameObject;
         OptionA = tablet.transform.Find("OptionA");
         OptionB = tablet.transform.Find("OptionB");
         OptionC = tablet.transform.Find("OptionC");
