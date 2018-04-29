@@ -30,99 +30,66 @@ public class OptionControllerPoliti : MonoBehaviour
     {
         NPCText.text = talk;
         if (delay > 0) {delay -= Time.deltaTime;}
-        if(branch == 0)
-        {
-            talk = "To all of the public, I promise to see that Ammendment 41 goes through!";
-            OptionA = "Who are you?";
-            OptionB = "Why are you here?";
-            OptionC = "Why does this issue matter?";
-        }
     }
 
     public void choiceA()
     {
-        delay = 2;
-        if (branch == 0) //Response: Hi
+        //delay = 2;
+        switch (branch)
         {
-            talk = "How are you?";
-            OptionA = "Great!";
-            OptionB = "Ok";
-            OptionC = "Not good...";
-            branch = 1;
-        }
-        else if (branch == 1) //Response: Great!
-        {
-            talk = "I'm glad to hear!";
-            OptionA = "";
-            OptionB = "";
-            OptionC = "";
-            branch = -1;
-        }
-        else if (branch == 2) //Response: Thank You!
-        {
-            talk = "You're Welcome!!";
-            OptionA = "";
-            OptionB = "";
-            OptionC = "";
-            branch = -1;
+            case 1:
+                LoadBranch2();
+                break;
+            case 2:
+                LoadBranch6();
+                break;
+            case 3:
+                LoadBranch5();
+                break;
+            case 4:
+                LoadBranch5();
+                break;
         }
     }
 
     public void choiceB()
     {
-        delay = 2;
-        if (branch == 0)//Response: Nice
+        //delay = 2;
+        switch (branch)
         {
-            talk = "Thank you?";
-            OptionA = "";
-            OptionB = "";
-            OptionC = "";
-            branch = -1;
+            case 1:
+                LoadBranch3();
+                break;
+            case 2:
+                LoadBranch3();
+                break;
+            case 3:
+                LoadBranch4();
+                break;
+            case 4:
+                LoadBranch6();
+                break;
         }
-        else if (branch == 1) //Response: Ok
-        {
-            talk = "I'm sure it'll get better!";
-            OptionA = "";
-            OptionB = "";
-            OptionC = "";
-            branch = -1;
-        }
-        else if (branch == 2) //Response: You too!
-        {
-            talk = "Thank you!";
-            OptionA = "";
-            OptionB = "";
-            OptionC = "";
-            branch = -1;
-        } 
+
     }
 
     public void choiceC()
     {
-        delay = 2;
-        if (branch == 0) //Response: Goodbye
+        //delay = 2;
+        switch (branch)
         {
-            talk = "Have a good one!";
-            OptionA = "Thank you";
-            OptionB = "You too";
-            OptionC = "I won't";
-            branch = 2;
-        }
-        else if (branch == 1) //Response: Not good!
-        {
-            talk = "Aw, keep your head up it gets better!";
-            OptionA = "";
-            OptionB = "";
-            OptionC = "";
-            branch = -1;
-        }
-        else if (branch == 2) //Response: I won't
-        {
-            talk = "Ok...?";
-            OptionA = "";
-            OptionB = "";
-            OptionC = "";
-            branch = -1;
+            case 1:
+                LoadBranch4();
+                break;
+            case 2:
+                LoadBranch5();
+                break;
+            case 3:
+                LoadBranch6();
+                break;
+            case 4:
+                LoadBranch6();
+                break;
         }
     }
 
@@ -131,8 +98,8 @@ public class OptionControllerPoliti : MonoBehaviour
         if(other.tag == "Player")
         {
             NPCText.gameObject.SetActive(true);
-            branch = 0;
-            delay = 0;
+            //branch = 0;
+            LoadBranch1();
         }
     }
 
@@ -159,5 +126,83 @@ public class OptionControllerPoliti : MonoBehaviour
             delay = 0;
         }
     }
+    public void LoadBranch1()
+    {
+        delay = 2;
+        talk = "And I assure you, Amendment 41 will help change our community under my watch!";
+        OptionA = "What is your stance?";
+        OptionB = "Why is this issue important to you?";
+        OptionC = "Why is there so much security and police involvement?";
+        branch = 1;
+    }
 
+    public void LoadBranch2()
+    {
+        delay = 2;
+        talk = "I am in firm support of Amendment 41!";
+        OptionA = "What do you have to gain from this bill?";
+        OptionB = "Is the security necessary?";
+        OptionC = "Thank you for your time.";
+        branch = 2;
+    }
+
+    public void LoadBranch3()
+    {
+        delay = 2;
+        talk = "I made a promise as your councilwoman to improve the lives of all citizens, and this Amendment will offer benefits that will uplift so many of our friends and neighbors! ";
+        OptionA = "Thank you for your time.";
+        OptionB = "Is the security necessary?";
+        OptionC = "Do you gain anything from this bill?";
+        branch = 3;
+    }
+
+    public void LoadBranch4()
+    {
+        delay = 2;
+        talk = "It’s simply a matter of security. Tensions have flared over the Amendment and our dedicated protectors are here to make sure that everyone has a safe time. ";
+        OptionA = "Thank you for your time.";
+        OptionB = "Do you think the bill might be too polarizing?";
+        OptionC = "Is this service really necessary?";
+        branch = 4;
+    }
+
+    public void LoadBranch5()
+    {
+        delay = 2;
+        talk = "Thank you for your time, and remember to vote YES on Ammendment 41 in the coming election!";
+        OptionA = "";
+        OptionB = "";
+        OptionC = "";
+        branch = 5;
+    }
+
+    public void LoadBranch6()
+    {
+        delay = 2;
+        talk = "No more questions, please. There are others I need to attend to.";
+        OptionA = "";
+        OptionB = "";
+        OptionC = "";
+        branch = 6;
+    }
+
+    public void LoadBranchB1()
+    {
+        delay = 2;
+        talk = "All I have to gain from this bill is the contentment in seeing this city flourish! My financially matters are not of concern right now.";
+        OptionA = "";
+        OptionB = "";
+        OptionC = "";
+        branch = -1;
+    }
+
+    public void LoadBranchB2()
+    {
+        delay = 2;
+        talk = "My personal matters are not the subject of the evening. We’re here today to stand in support of this great Amendment, and I would appreciate if questions were limited to that subject.";
+        OptionA = "";
+        OptionB = "";
+        OptionC = "";
+        branch = -2;
+    }
 }
