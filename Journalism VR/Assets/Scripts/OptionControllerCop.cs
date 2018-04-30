@@ -122,6 +122,7 @@ public class OptionControllerCop : MonoBehaviour
     public void LoadBranch1()
     {
         delay = 2;
+		transform.Find ("CopD1").GetComponent<AudioSource> ().Play ();
         talk = "This is a restricted area";
         OptionA = "I am a reporter";
         OptionB = "This is public property";
@@ -131,6 +132,7 @@ public class OptionControllerCop : MonoBehaviour
 
     public void LoadBranch2(){
         delay = 2;
+		transform.Find ("CopD2").GetComponent<AudioSource> ().Play ();
         talk = "Show me your credentials";
         OptionA = "Present credentials";
         OptionB = "Refuse";
@@ -141,6 +143,7 @@ public class OptionControllerCop : MonoBehaviour
     public void LoadBranch3()
     {
         delay = 2;
+		transform.Find ("CopD3").GetComponent<AudioSource> ().Play ();
         talk = "No, This Area is Off-Limits";
         OptionA = "Try to stop me";
         OptionB = "Where's your supervisor";
@@ -151,6 +154,7 @@ public class OptionControllerCop : MonoBehaviour
     public void LoadBranch4()
     {
         delay = 2;
+		transform.Find ("CopD4").GetComponent<AudioSource> ().Play ();
         talk = "We sectioned off this zone to keep the sides in line. Only people with clearance are allowed past this point. Show me your credentials";
         OptionA = "Present credentials";
         OptionB = "Refuse";
@@ -161,6 +165,7 @@ public class OptionControllerCop : MonoBehaviour
     public void LoadBranch5()
     {
         delay = 2;
+		transform.Find ("CopD5").GetComponent<AudioSource> ().Play ();
         talk = "If you’re not going to cooperate don’t waste my time. Move along now.";
         OptionA = "";
         OptionB = "";
@@ -171,6 +176,7 @@ public class OptionControllerCop : MonoBehaviour
     public void LoadBranch6()
     {
         delay = 2;
+		transform.Find ("CopD6").GetComponent<AudioSource> ().Play ();
         talk = "Your credentials check out, I’ll let you through.";
         OptionA = "";
         OptionB = "";
@@ -181,6 +187,7 @@ public class OptionControllerCop : MonoBehaviour
     public void LoadBranchB1()
     {
         delay = 2;
+		transform.Find ("CopD7").GetComponent<AudioSource> ().Play ();
         talk = "What? Where? Thanks for the tip, we’ll get help there. Everybody, clear out! ";
         OptionA = "";
         OptionB = "";
