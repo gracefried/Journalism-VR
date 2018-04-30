@@ -22,6 +22,7 @@ public class PlayerMove1 : MonoBehaviour
         OptionC = tablet.transform.Find("OptionC").GetComponent<TextMesh>();
         OptionA.text = ""; OptionB.text = ""; OptionC.text = "";
         mainCam = transform.Find("Main Camera").GetComponent<Camera>();
+
     }
 
     void FixedUpdate()
