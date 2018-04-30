@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 442}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 883
+  controlID: 126
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 442}
   m_MaxSize: {x: 8006, y: 8042}
   vertical: 1
-  controlID: 884
+  controlID: 89
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 885
+  controlID: 64
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,7 +174,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 248
+    width: 284
     height: 390
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -197,12 +197,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 248
+    x: 284
     y: 0
-    width: 699
+    width: 663
     height: 390
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -259,7 +259,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 342}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 824
+  controlID: 127
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -411,13 +411,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 8
     y: 100
-    width: 246
+    width: 282
     height: 369
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 2496ffff36f6ffff00000000
+    m_SelectedIDs: 224cffff
+    m_LastClickedID: -46046
+    m_ExpandedIDs: 1251ffffd8fbffff0000000068600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -436,7 +436,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - ProtestScene
+  - StartScene
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -462,19 +462,19 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 258
+    x: 294
     y: 100
-    width: 695
+    width: 659
     height: 369
   m_SceneLighting: 1
-  lastFramingTime: 283.2550328567262
+  lastFramingTime: 1343.6799762962962
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 32.609905, y: -6.5029736, z: -4.100276}
+    m_Target: {x: -0.41308045, y: -0.5541606, z: 0.49177322}
     speed: 2
-    m_Value: {x: 32.609905, y: -6.5029736, z: -4.100276}
+    m_Value: {x: -0.41308045, y: -0.5541606, z: 0.49177322}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -497,13 +497,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.27942824, y: 0.6077258, z: -0.2415411, w: 0.7030378}
+    m_Target: {x: 0.013173863, y: -0.943246, z: 0.32975045, w: 0.03767267}
     speed: 2
-    m_Value: {x: 0.27942824, y: 0.6077258, z: -0.2415411, w: 0.7030378}
+    m_Value: {x: 0.013173591, y: -0.9432266, z: 0.32974365, w: 0.03767189}
   m_Size:
-    m_Target: 27.538471
+    m_Target: 25.357868
     speed: 2
-    m_Value: 27.538471
+    m_Value: 25.357868
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -725,10 +725,10 @@ MonoBehaviour:
   m_LastProjectPath: C:\Users\CJ\Desktop\GitHub\Journalism-VR\Journalism VR
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 113}
-    m_SelectedIDs: 762f0000
-    m_LastClickedID: 12150
-    m_ExpandedIDs: 00000000e82d00003e2f00006a320000ae350000163900001aae000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 21}
+    m_SelectedIDs: 6a260000
+    m_LastClickedID: 9834
+    m_ExpandedIDs: 00000000c82400002a260000d22c0000c4a5000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -756,7 +756,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e82d00003e2f00006a320000ae350000163900001aae000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000c82400002a26000076290000d22c000056300000c4a50000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -800,7 +800,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 13}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
