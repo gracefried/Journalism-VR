@@ -21,16 +21,20 @@ public class ShopScrollList : MonoBehaviour
     //public Text myGoldDisplay;
     public SimpleObjectPool buttonObjectPool;
     public float gold = 20f;
+    public RectTransform scrollbar;
     float delay = 1;
     int curBut = 0;
+    public bool headline;
+
 
     // Use this for initialization
     void Start()
     {
-        itemList = FindObjectOfType<InfoTriggers>().getHeadlines();
+        if (headline == false) { itemList = FindObjectOfType<InfoTriggers>().getHeadlines(); }
+        else { itemList = FindObjectOfType<InfoTriggers>().getComments(); }
         buttonList = new List<SampleButton>();
         RefreshDisplay();
-
+        //scrollbar.gameObject.SetActive(true);
     }
 
     void Update()
@@ -108,7 +112,7 @@ public class ShopScrollList : MonoBehaviour
         if(Input.GetAxis("Vertical") < 0 && delay <= 0) { Down(); }
         if(Input.GetAxis("Vertical") > 0 && delay <= 0) { Up(); }
         if (Input.GetKeyDown("z")) { buttonList[curBut].HandleClick(); }
-
+        scrollbar.GetComponent<Scrollbar>().value = 1 - (float)curBut / (float)buttonList.Count;
     }
 
     void Up()
