@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 392}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1350
     height: 669
-  m_MinSize: {x: 950, y: 392}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1350
     height: 619
-  m_MinSize: {x: 681, y: 342}
-  m_MaxSize: {x: 18006, y: 14042}
+  m_MinSize: {x: 683, y: 342}
+  m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 3900
+  controlID: 11
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 947
     height: 619
-  m_MinSize: {x: 404, y: 342}
-  m_MaxSize: {x: 8004, y: 8042}
+  m_MinSize: {x: 406, y: 342}
+  m_MaxSize: {x: 8006, y: 8042}
   vertical: 1
-  controlID: 3901
+  controlID: 12
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,10 +154,10 @@ MonoBehaviour:
     y: 0
     width: 947
     height: 390
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 3902
+  controlID: 13
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 284
     height: 390
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 342}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 3800
+  controlID: 114
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -444,9 +444,9 @@ MonoBehaviour:
     height: 369
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8284fdff
-    m_LastClickedID: -162686
-    m_ExpandedIDs: 7c8efdffce8efdff4abcfeffd8fbffff0000000030b100005eb100009cb10000a6b10000f4b100002eb2000036b200004eb2000064b20000
+    m_SelectedIDs: d0efffff
+    m_LastClickedID: -4144
+    m_ExpandedIDs: f6f0ffff56faffffd8fbffff0000000020380000ce3b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -528,11 +528,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.12231316, y: -0.10487998, z: 0.012972934, w: 0.9868492}
     speed: 2
-    m_Value: {x: 0.122313164, y: -0.10487999, z: 0.012972935, w: 0.98684925}
+    m_Value: {x: -0.12231316, y: 0.10487998, z: -0.012972934, w: -0.9868491}
   m_Size:
-    m_Target: 409.72937
+    m_Target: 481.3117
     speed: 2
-    m_Value: 409.72937
+    m_Value: 481.3117
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -672,7 +672,7 @@ MonoBehaviour:
     y: 100
     width: 401
     height: 327
-  m_ScrollPosition: {x: 0, y: 259.90836}
+  m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 115
@@ -756,10 +756,10 @@ MonoBehaviour:
   m_LastProjectPath: C:\Users\CJ\Desktop\GitHub\Journalism-VR\Journalism VR
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 182.16667}
-    m_SelectedIDs: fc350000
-    m_LastClickedID: 13820
-    m_ExpandedIDs: 00000000d0240000fe26000086270000602f000016b1000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 203}
+    m_SelectedIDs: 12360000
+    m_LastClickedID: 13842
+    m_ExpandedIDs: 00000000d4240000022700008a270000722f00003037000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -787,7 +787,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d0240000fe26000086270000602f000016b1000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000d4240000022700008a270000722f000030370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -814,7 +814,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000074290000902700007e270000802700008227000098370000bc29000000000000be2900003e260000963400001826000056270000662f0000f2320000b63d0200f299fdff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -839,6 +839,6 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 87}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 110
