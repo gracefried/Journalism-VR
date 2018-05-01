@@ -22,13 +22,13 @@ public class OptionControllerProtA : MonoBehaviour
         NPCText = transform.parent.Find("NPCText").gameObject.GetComponent<TextMesh>();
         branch = 0;
         delay = 0;
-        NPCText.gameObject.SetActive(false);
+        //NPCText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        NPCText.text = talk;
+        //NPCText.text = talk;
         if (delay > 0) {delay -= Time.deltaTime;}
     }
 
@@ -136,6 +136,7 @@ public class OptionControllerProtA : MonoBehaviour
         OptionB = "Why is this issue important to you?";
         OptionC = "What do you want to see changed?";
         branch = 1;
+        FindObjectOfType<InfoTriggers>().protestA = true;
     }
 
     public void LoadBranch2()
@@ -157,6 +158,7 @@ public class OptionControllerProtA : MonoBehaviour
         OptionA = "Thank you for your time.";
         OptionB = "How much does your family make?";
         OptionC = "What would you change about it?";
+        FindObjectOfType<InfoTriggers>().millpockets = true;
         branch = 3;
     }
 

@@ -22,13 +22,13 @@ public class OptionControllerCop : MonoBehaviour
         NPCText = transform.parent.Find("NPCText").gameObject.GetComponent<TextMesh>();
         branch = 1;
         delay = 0;
-        NPCText.gameObject.SetActive(false);
+        //NPCText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        NPCText.text = talk;
+        //NPCText.text = talk;
         if (delay > 0) {delay -= Time.deltaTime;}
         //if(branch == 1){LoadBranch1();}
     }
@@ -128,6 +128,7 @@ public class OptionControllerCop : MonoBehaviour
         OptionB = "This is public property";
         OptionC = "What is happening here?";
         branch = 1;
+        FindObjectOfType<InfoTriggers>().Cop = true;
     }
 
     public void LoadBranch2(){
@@ -182,6 +183,7 @@ public class OptionControllerCop : MonoBehaviour
         OptionB = "";
         OptionC = "";
         branch = 6;
+        FindObjectOfType<InfoTriggers>().canPass = true;
     }
 
     public void LoadBranchB1()

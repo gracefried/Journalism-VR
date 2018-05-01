@@ -157,7 +157,7 @@ public class InfoTriggers : MonoBehaviour {
             comments.Add("The stuff they'll put in headlines these days...");
         }
 
-        comments.Add("Press Z to finish");
+        comments.Add("Press Z and X to finish");
 
         return comments;
     }

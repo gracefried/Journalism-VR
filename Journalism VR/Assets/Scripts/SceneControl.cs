@@ -26,12 +26,13 @@ public class SceneControl : MonoBehaviour {
             if(gameTimer > 0) { gameTimer -= Time.deltaTime; }
             else { transition(); }
         }
+        if(delay <= 0){SceneManager.LoadScene(nextScene);}
     }
 
     public void transition()
     {
         end = true;
         black.GetComponent<Animator>().SetTrigger("fade");
-        //if(delay == 0){SceneManager.LoadScene(nextScene);}
+        Debug.Log("end");
     }
 }

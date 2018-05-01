@@ -42,7 +42,7 @@ public class ShopScrollList : MonoBehaviour
 
     void Update()
     {
-        delay -= Time.deltaTime;
+        if (canUse == true) { delay -= Time.deltaTime; }
         if (canUse == true && buttonList.Count > 0) { listScroll(); }
     }
 

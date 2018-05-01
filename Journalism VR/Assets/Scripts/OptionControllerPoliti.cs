@@ -22,13 +22,13 @@ public class OptionControllerPoliti : MonoBehaviour
         NPCText = transform.parent.Find("NPCText").gameObject.GetComponent<TextMesh>();
         branch = 0;
         delay = 0;
-        NPCText.gameObject.SetActive(false);
+        //NPCText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        NPCText.text = talk;
+        //NPCText.text = talk;
         if (delay > 0) {delay -= Time.deltaTime;}
     }
 
@@ -38,7 +38,7 @@ public class OptionControllerPoliti : MonoBehaviour
         switch (branch)
         {
             case 1:
-                LoadBranch2();
+                LoadBranchB2();
                 break;
             case 2:
                 LoadBranch6();
@@ -85,7 +85,7 @@ public class OptionControllerPoliti : MonoBehaviour
                 LoadBranch5();
                 break;
             case 3:
-                LoadBranch6();
+                LoadBranchB1();
                 break;
             case 4:
                 LoadBranch6();
@@ -133,8 +133,9 @@ public class OptionControllerPoliti : MonoBehaviour
         talk = "And I assure you, Amendment 41 will help change our community under my watch!";
         OptionA = "What is your stance?";
         OptionB = "Why is this issue important to you?";
-        OptionC = "Why is there so much security and police involvement?";
+        OptionC = "Can you comment on your recent scandal?";
         branch = 1;
+        FindObjectOfType<InfoTriggers>().politician = true;
     }
 
     public void LoadBranch2()
@@ -211,6 +212,7 @@ public class OptionControllerPoliti : MonoBehaviour
         OptionA = "";
         OptionB = "";
         OptionC = "";
+        FindObjectOfType<InfoTriggers>().scandal = true;
         branch = -2;
     }
 }

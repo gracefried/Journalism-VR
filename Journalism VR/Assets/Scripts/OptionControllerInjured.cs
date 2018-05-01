@@ -22,13 +22,13 @@ public class OptionControllerInjured : MonoBehaviour
         NPCText = transform.parent.Find("NPCText").gameObject.GetComponent<TextMesh>();
         branch = 0;
         delay = 0;
-        NPCText.gameObject.SetActive(false);
+        //NPCText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        NPCText.text = talk;
+        //NPCText.text = talk;
         if (delay > 0) {delay -= Time.deltaTime;}
     }
 
@@ -145,6 +145,7 @@ public class OptionControllerInjured : MonoBehaviour
         OptionB = "What happened to you?";
         OptionC = "Why are you here?";
         branch = 1;
+        FindObjectOfType<InfoTriggers>().injuredP = true;
     }
 
     public void LoadBranch2()
@@ -180,6 +181,7 @@ public class OptionControllerInjured : MonoBehaviour
         OptionB = "";
         OptionC = "";
         branch = 4;
+        FindObjectOfType<InfoTriggers>().millpockets = true;
     }
 
     public void LoadBranch5()
