@@ -139,6 +139,7 @@ public class OptionControllerInjured : MonoBehaviour
     public void LoadBranch1()
     {
         delay = 2;
+		transform.Find ("InjuredD1").GetComponent<AudioSource> ().Play ();
         talk = "Ugh, my head";
         OptionA = "Do you need help?";
         OptionB = "What happened to you?";
@@ -149,6 +150,7 @@ public class OptionControllerInjured : MonoBehaviour
     public void LoadBranch2()
     {
         delay = 2;
+		transform.Find ("InjuredD2").GetComponent<AudioSource> ().Play ();
         talk = "I should be alright, just need some water or something";
         OptionA = "Wait here I’ll get you a bottle";
         OptionB = "What happened?";
@@ -161,6 +163,7 @@ public class OptionControllerInjured : MonoBehaviour
     public void LoadBranch3()
     {
         delay = 2;
+		transform.Find ("InjuredD3").GetComponent<AudioSource> ().Play ();
         talk = "I got hit with a bottle that was thrown about 20 minutes ago";
         OptionA = "Do you need help?";
         OptionB = "Do you know who threw the bottle?";
@@ -171,6 +174,7 @@ public class OptionControllerInjured : MonoBehaviour
     public void LoadBranch4()
     {
         delay = 2;
+		transform.Find ("InjuredD4").GetComponent<AudioSource> ().Play ();
         talk = "I came out to protest that bogus amendment! Amendment 41 is just a scam to line millionaire pockets. We can’t let that thing pass or people like me are gonna end up suffering for it!";
         OptionA = "";
         OptionB = "";
@@ -181,6 +185,7 @@ public class OptionControllerInjured : MonoBehaviour
     public void LoadBranch5()
     {
         delay = 2;
+		transform.Find ("InjuredD5").GetComponent<AudioSource> ().Play ();
         talk = "It was some loser from the other side, I didn’t see who";
         OptionA = "Do you want me to contact authorities?";
         OptionB = "Why are you here?";
@@ -191,6 +196,7 @@ public class OptionControllerInjured : MonoBehaviour
     public void LoadBranch6()
     {
         delay = 2;
+		transform.Find ("InjuredD6").GetComponent<AudioSource> ().Play ();
         talk = "Be careful out there, don’t end up like me";
         OptionA = "";
         OptionB = "";
@@ -201,6 +207,7 @@ public class OptionControllerInjured : MonoBehaviour
     public void LoadBranch7()
     {
         delay = 2;
+		transform.Find ("InjuredD7").GetComponent<AudioSource> ().Play ();
         talk = "Thanks man, at least there are some decent people out here";
         OptionA = "What happened to you?";
         OptionB = "Why are you here?";
@@ -211,6 +218,7 @@ public class OptionControllerInjured : MonoBehaviour
     public void LoadBranch8()
     {
         delay = 2;
+		transform.Find ("InjuredD8").GetComponent<AudioSource> ().Play ();
         talk = "Yeah, that’d be great, thanks";
         OptionA = "";
         OptionB = "";
@@ -221,6 +229,7 @@ public class OptionControllerInjured : MonoBehaviour
     public void LoadBranchB1()
     {
         delay = 2;
+		transform.Find ("InjuredD9").GetComponent<AudioSource> ().Play ();
         talk = "She’s some snooty jerk just looking to make bank, don’t believe a word she says!";
         OptionA = "";
         OptionB = "";
@@ -231,6 +240,7 @@ public class OptionControllerInjured : MonoBehaviour
     public void LoadBranchB2()
     {
         delay = 2;
+		transform.Find ("InjuredD10").GetComponent<AudioSource> ().Play ();
         talk = "So what? Those losers were getting too uppity and their stupid Amendment is gonna do nothing but make things worse! Sure I pulled some chick’s hair but she didn’t get a bottle to the face!";
         OptionA = "";
         OptionB = "";

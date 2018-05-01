@@ -130,6 +130,7 @@ public class OptionControllerProtB : MonoBehaviour
     public void LoadBranch1()
     {
         delay = 2;
+		transform.Find ("ProtestBD1").GetComponent<AudioSource> ().Play ();
         talk = "Vote for Amendment 41!!!";
         OptionA = "Why are you here?";
         OptionB = "Why is this issue important to you?";
@@ -140,6 +141,7 @@ public class OptionControllerProtB : MonoBehaviour
     public void LoadBranch2()
     {
         delay = 2;
+		transform.Find ("ProtestBD2").GetComponent<AudioSource> ().Play ();
         talk = "I came out here to support Amendment 41!";
         OptionA = "Would you change it in any way?";
         OptionB = "Why is this important to you?";
@@ -150,6 +152,7 @@ public class OptionControllerProtB : MonoBehaviour
     public void LoadBranch3()
     {
         delay = 2;
+		transform.Find ("ProtestBD3").GetComponent<AudioSource> ().Play ();
         talk = "The benefits that the Amendment offer will do so much to help my family! We need this!";
         OptionA = "Thank you for your time.";
         OptionB = "How much does your family make?";
@@ -160,6 +163,7 @@ public class OptionControllerProtB : MonoBehaviour
     public void LoadBranch4()
     {
         delay = 2;
+		transform.Find ("ProtestBD4").GetComponent<AudioSource> ().Play ();
         talk = "If anything I would extend the benefits to help more families, but the tax increase is already so high that I wouldn’t risk that now.";
         OptionA = "Thank you for your time.";
         OptionB = "Don’t you think it’s selfish to put this strain on those who can’t benefit?";
@@ -170,6 +174,7 @@ public class OptionControllerProtB : MonoBehaviour
     public void LoadBranch5()
     {
         delay = 2;
+		transform.Find ("ProtestBD5").GetComponent<AudioSource> ().Play ();
         talk = "Spread the word about the Amendment we need any vote we can!";
         OptionA = "";
         OptionB = "";
@@ -180,6 +185,7 @@ public class OptionControllerProtB : MonoBehaviour
     public void LoadBranch6()
     {
         delay = 2;
+		transform.Find ("ProtestBD6").GetComponent<AudioSource> ().Play ();
         talk = "I’m not comfortable with that question, I think we’re done talking here.";
         OptionA = "";
         OptionB = "";
@@ -190,6 +196,7 @@ public class OptionControllerProtB : MonoBehaviour
     public void LoadBranchB1()
     {
         delay = 2;
+		transform.Find ("ProtestBD7").GetComponent<AudioSource> ().Play ();
         talk = "She’s doing her best to raise awareness and support the Amendment! I have nothing but admiration for her.";
         OptionA = "";
         OptionB = "";
@@ -200,6 +207,7 @@ public class OptionControllerProtB : MonoBehaviour
     public void LoadBranchB2()
     {
         delay = 2;
+		transform.Find ("ProtestBD8").GetComponent<AudioSource> ().Play ();
         talk = "He was attacking a girl from across the barricade so we started throwing things at him. The poor girl looked pretty banged up before she left, I hope she’s ok.";
         OptionA = "";
         OptionB = "";
@@ -210,6 +218,7 @@ public class OptionControllerProtB : MonoBehaviour
     public void LoadBranchB3()
     {
         delay = 2;
+		transform.Find ("ProtestBD9").GetComponent<AudioSource> ().Play ();
         talk = "I can understand why they’re against it, but I just think it’s selfish to go against a program that’ll do so much for our community.";
         OptionA = "";
         OptionB = "";
