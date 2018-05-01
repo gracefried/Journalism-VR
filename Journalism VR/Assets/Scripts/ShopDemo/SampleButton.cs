@@ -34,6 +34,7 @@ public class SampleButton : MonoBehaviour
     {
         //scrollList.TryTransferItemToOtherShop(item);
         FindObjectOfType<InfoTriggers>().headline = nameLabel.text;
+        FindObjectOfType<HeadlineController>().activateHeadline();
         Debug.Log("click");
     }
 }

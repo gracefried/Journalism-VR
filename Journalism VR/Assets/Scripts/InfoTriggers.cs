@@ -118,14 +118,12 @@ public class InfoTriggers : MonoBehaviour {
 
         else if (headline == "Violent Protest Leads to Police Intervention" || headline == "Local Protest Devolves into Violence")
         {
-            comments.Add("The protest wasn't even violent! It was one guy!");
             comments.Add("Wish I coulda seen something crazy like that...");
             comments.Add("This doesn't say much about the protest...");
             comments.Add("Try to stick to the topic of your project");
             comments.Add("What was the protest even about?");
             comments.Add("I was there, some guy was knocked out...");
-            comments.Add("Thank goodness the cops were there...");
-            comments.Add("At least everyone made it back safe!");   
+            comments.Add("Thank goodness the cops were there..."); 
         }
 
         else if (headline == "Local Community Stands Against Amendment 41" || headline == "Amendment 41: Your Money vs Their Comfort" || 
@@ -158,6 +156,8 @@ public class InfoTriggers : MonoBehaviour {
             comments.Add("Try actually talking to people");
             comments.Add("The stuff they'll put in headlines these days...");
         }
+
+        comments.Add("Press Z to finish");
 
         return comments;
     }
