@@ -88,6 +88,7 @@
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
 'Assets/PlayerMove1.cs'
+'Assets/Screenshot.cs'
 'Assets/Scripts/FollowCamera.cs'
 'Assets/Scripts/InfoTriggers.cs'
 'Assets/Scripts/OptionController.cs'
@@ -99,6 +100,9 @@
 'Assets/Scripts/PlayerController.cs'
 'Assets/Scripts/PlayerLook.cs'
 'Assets/Scripts/PlayerMove.cs'
+'Assets/Scripts/ShopDemo/SampleButton.cs'
+'Assets/Scripts/ShopDemo/ShopScrollList.cs'
+'Assets/Scripts/ShopDemo/SimpleObjectPool.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Xml.Linq.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/UnityScript.dll'
