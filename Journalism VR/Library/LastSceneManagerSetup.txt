@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/HeadlineScene.unity
+- path: Assets/Scenes/ProtestScene.unity
   isLoaded: 1
   isActive: 1
