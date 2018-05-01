@@ -23,6 +23,7 @@ public class ShopScrollList : MonoBehaviour
     public float gold = 20f;
     float delay = 1;
     int curBut = 0;
+    public bool comments;
 
     // Use this for initialization
     void Start()
