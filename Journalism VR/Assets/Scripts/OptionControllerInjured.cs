@@ -30,99 +30,75 @@ public class OptionControllerInjured : MonoBehaviour
     {
         NPCText.text = talk;
         if (delay > 0) {delay -= Time.deltaTime;}
-        if(branch == 0)
-        {
-            talk = "Ugh, my head...";
-            OptionA = "Do you need help?";
-            OptionB = "What happened?";
-            OptionC = "Why are you here?";
-        }
     }
 
     public void choiceA()
     {
-        delay = 2;
-        if (branch == 0) //Response: Hi
+        //delay = 2;
+        switch (branch)
         {
-            talk = "How are you?";
-            OptionA = "Great!";
-            OptionB = "Ok";
-            OptionC = "Not good...";
-            branch = 1;
-        }
-        else if (branch == 1) //Response: Great!
-        {
-            talk = "I'm glad to hear!";
-            OptionA = "";
-            OptionB = "";
-            OptionC = "";
-            branch = -1;
-        }
-        else if (branch == 2) //Response: Thank You!
-        {
-            talk = "You're Welcome!!";
-            OptionA = "";
-            OptionB = "";
-            OptionC = "";
-            branch = -1;
+            case 1:
+                LoadBranch2();
+                break;
+            case 2:
+                LoadBranch6();
+                break;
+            case 3:
+                LoadBranch2();
+                break;
+            case 5:
+                LoadBranch8();
+                break;
+            case 7:
+                LoadBranch3();
+                break;
         }
     }
 
     public void choiceB()
     {
-        delay = 2;
-        if (branch == 0)//Response: Nice
+        //delay = 2;
+        switch (branch)
         {
-            talk = "Thank you?";
-            OptionA = "";
-            OptionB = "";
-            OptionC = "";
-            branch = -1;
+            case 1:
+                LoadBranch3();
+                break;
+            case 2:
+                LoadBranch5();
+                break;
+            case 3:
+                LoadBranch5();
+                break;
+            case 5:
+                LoadBranch4();
+                break;
+            case 7:
+                LoadBranch4();
+                break;
         }
-        else if (branch == 1) //Response: Ok
-        {
-            talk = "I'm sure it'll get better!";
-            OptionA = "";
-            OptionB = "";
-            OptionC = "";
-            branch = -1;
-        }
-        else if (branch == 2) //Response: You too!
-        {
-            talk = "Thank you!";
-            OptionA = "";
-            OptionB = "";
-            OptionC = "";
-            branch = -1;
-        } 
+
     }
 
     public void choiceC()
     {
-        delay = 2;
-        if (branch == 0) //Response: Goodbye
+        //delay = 2;
+        switch (branch)
         {
-            talk = "Have a good one!";
-            OptionA = "Thank you";
-            OptionB = "You too";
-            OptionC = "I won't";
-            branch = 2;
-        }
-        else if (branch == 1) //Response: Not good!
-        {
-            talk = "Aw, keep your head up it gets better!";
-            OptionA = "";
-            OptionB = "";
-            OptionC = "";
-            branch = -1;
-        }
-        else if (branch == 2) //Response: I won't
-        {
-            talk = "Ok...?";
-            OptionA = "";
-            OptionB = "";
-            OptionC = "";
-            branch = -1;
+            case 1:
+                LoadBranch4();
+                break;
+            case 2:
+                LoadBranch8();
+                break;
+            case 3:
+                LoadBranch4();
+                break;
+            case 5:
+                LoadBranch2();
+                break;
+            case 7:
+                LoadBranch8();
+                break;
         }
     }
 
@@ -131,8 +107,8 @@ public class OptionControllerInjured : MonoBehaviour
         if(other.tag == "Player")
         {
             NPCText.gameObject.SetActive(true);
-            branch = 0;
-            delay = 0;
+            LoadBranch1();
+            //delay = 0;
         }
     }
 
@@ -158,6 +134,108 @@ public class OptionControllerInjured : MonoBehaviour
             NPCText.gameObject.SetActive(false);
             delay = 0;
         }
+    }
+
+    public void LoadBranch1()
+    {
+        delay = 2;
+        talk = "Ugh, my head";
+        OptionA = "Do you need help?";
+        OptionB = "What happened to you?";
+        OptionC = "Why are you here?";
+        branch = 1;
+    }
+
+    public void LoadBranch2()
+    {
+        delay = 2;
+        talk = "I should be alright, just need some water or something";
+        OptionA = "Wait here I’ll get you a bottle";
+        OptionB = "What happened?";
+        OptionC = "Do you want me to contact the authorities?";
+        branch = 2;
+    }
+
+
+
+    public void LoadBranch3()
+    {
+        delay = 2;
+        talk = "I got hit with a bottle that was thrown about 20 minutes ago";
+        OptionA = "Do you need help?";
+        OptionB = "Do you know who threw the bottle?";
+        OptionC = "Why are you here?";
+        branch = 3;
+    }
+
+    public void LoadBranch4()
+    {
+        delay = 2;
+        talk = "I came out to protest that bogus amendment! Amendment 41 is just a scam to line millionaire pockets. We can’t let that thing pass or people like me are gonna end up suffering for it!";
+        OptionA = "";
+        OptionB = "";
+        OptionC = "";
+        branch = 4;
+    }
+
+    public void LoadBranch5()
+    {
+        delay = 2;
+        talk = "It was some loser from the other side, I didn’t see who";
+        OptionA = "Do you want me to contact authorities?";
+        OptionB = "Why are you here?";
+        OptionC = "Do you need help?";
+        branch = 5;
+    }
+
+    public void LoadBranch6()
+    {
+        delay = 2;
+        talk = "Be careful out there, don’t end up like me";
+        OptionA = "";
+        OptionB = "";
+        OptionC = "";
+        branch = 6;
+    }
+
+    public void LoadBranch7()
+    {
+        delay = 2;
+        talk = "Thanks man, at least there are some decent people out here";
+        OptionA = "What happened to you?";
+        OptionB = "Why are you here?";
+        OptionC = "Do you want me to get help?";
+        branch = 7;
+    }
+
+    public void LoadBranch8()
+    {
+        delay = 2;
+        talk = "Yeah, that’d be great, thanks";
+        OptionA = "";
+        OptionB = "";
+        OptionC = "";
+        branch = 8;
+    }
+
+    public void LoadBranchB1()
+    {
+        delay = 2;
+        talk = "She’s some snooty jerk just looking to make bank, don’t believe a word she says!";
+        OptionA = "";
+        OptionB = "";
+        OptionC = "";
+        branch = -1;
+    }
+
+    public void LoadBranchB2()
+    {
+        delay = 2;
+        talk = "So what? Those losers were getting too uppity and their stupid Amendment is gonna do nothing but make things worse! Sure I pulled some chick’s hair but she didn’t get a bottle to the face!";
+        OptionA = "";
+        OptionB = "";
+        OptionC = "";
+        branch = -2;
     }
 
 }
