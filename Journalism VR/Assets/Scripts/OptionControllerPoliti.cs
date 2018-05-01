@@ -129,6 +129,7 @@ public class OptionControllerPoliti : MonoBehaviour
     public void LoadBranch1()
     {
         delay = 2;
+		transform.Find ("PoliticianD1").GetComponent<AudioSource> ().Play ();
         talk = "And I assure you, Amendment 41 will help change our community under my watch!";
         OptionA = "What is your stance?";
         OptionB = "Why is this issue important to you?";
@@ -139,6 +140,7 @@ public class OptionControllerPoliti : MonoBehaviour
     public void LoadBranch2()
     {
         delay = 2;
+		transform.Find ("PoliticianD2").GetComponent<AudioSource> ().Play ();
         talk = "I am in firm support of Amendment 41!";
         OptionA = "What do you have to gain from this bill?";
         OptionB = "Is the security necessary?";
@@ -149,6 +151,7 @@ public class OptionControllerPoliti : MonoBehaviour
     public void LoadBranch3()
     {
         delay = 2;
+		transform.Find ("PoliticianD3").GetComponent<AudioSource> ().Play ();
         talk = "I made a promise as your councilwoman to improve the lives of all citizens, and this Amendment will offer benefits that will uplift so many of our friends and neighbors! ";
         OptionA = "Thank you for your time.";
         OptionB = "Is the security necessary?";
@@ -159,6 +162,7 @@ public class OptionControllerPoliti : MonoBehaviour
     public void LoadBranch4()
     {
         delay = 2;
+		transform.Find ("PoliticianD4").GetComponent<AudioSource> ().Play ();
         talk = "It’s simply a matter of security. Tensions have flared over the Amendment and our dedicated protectors are here to make sure that everyone has a safe time. ";
         OptionA = "Thank you for your time.";
         OptionB = "Do you think the bill might be too polarizing?";
@@ -169,6 +173,7 @@ public class OptionControllerPoliti : MonoBehaviour
     public void LoadBranch5()
     {
         delay = 2;
+		transform.Find ("PoliticianD5").GetComponent<AudioSource> ().Play ();
         talk = "Thank you for your time, and remember to vote YES on Ammendment 41 in the coming election!";
         OptionA = "";
         OptionB = "";
@@ -179,6 +184,7 @@ public class OptionControllerPoliti : MonoBehaviour
     public void LoadBranch6()
     {
         delay = 2;
+		transform.Find ("PoliticianD6").GetComponent<AudioSource> ().Play ();
         talk = "No more questions, please. There are others I need to attend to.";
         OptionA = "";
         OptionB = "";
@@ -189,6 +195,7 @@ public class OptionControllerPoliti : MonoBehaviour
     public void LoadBranchB1()
     {
         delay = 2;
+		transform.Find ("PoliticianD8").GetComponent<AudioSource> ().Play ();
         talk = "All I have to gain from this bill is the contentment in seeing this city flourish! My financially matters are not of concern right now.";
         OptionA = "";
         OptionB = "";
@@ -199,6 +206,7 @@ public class OptionControllerPoliti : MonoBehaviour
     public void LoadBranchB2()
     {
         delay = 2;
+		transform.Find ("PoliticianD7").GetComponent<AudioSource> ().Play ();
         talk = "My personal matters are not the subject of the evening. We’re here today to stand in support of this great Amendment, and I would appreciate if questions were limited to that subject.";
         OptionA = "";
         OptionB = "";
